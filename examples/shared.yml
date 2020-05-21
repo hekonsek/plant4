@@ -1,0 +1,10 @@
+name: Happy Customer Cloud
+systems:
+  - name: CRM
+    containers:
+      - name: CRM backend
+        relations:
+          - target: MySQL server
+            name: Store data
+shared:
+  - name: MySQL server

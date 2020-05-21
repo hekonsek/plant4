@@ -1,0 +1,7 @@
+name: Happy Customer Cloud
+systems:
+  - name: CRM
+    relations:
+      - target: Accounting
+        name: Generate invoices
+  - name: Accounting

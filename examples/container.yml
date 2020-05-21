@@ -1,0 +1,9 @@
+name: Happy Customer Cloud
+systems:
+  - name: CRM
+    containers:
+      - name: CRM backend
+      - name: CRM frontend
+        relations:
+          - target: CRM backend
+            name: Consume REST API
